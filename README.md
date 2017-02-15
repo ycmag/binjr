@@ -4,7 +4,7 @@
 
 Its focus is on enabling end users to constitute their own custom sets of views for the data exposed by their various sources, generally in ways that are not proposed by the visualization front end already available. 
 
-As such, binjr aims to become a valuable tool in forensic analysis when working with data sources that do not provide such flexible visualization natively (e.g. visualizing the coincidence of CPU usage spikes with user load metrics).
+As such, *binjr* aims to become a valuable tool in forensic analysis when working with data sources that do not provide such flexible visualization natively (e.g. visualizing the coincidence of CPU usage spikes with user load metrics).
 
 ![Screenshot](/assets/images/screenshot01.png)
 
