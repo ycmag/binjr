@@ -2,7 +2,7 @@
 
 *binjr* is a Java based, open source, time series visualization tool. It can plot time series data from multiple sources as a set of charts, which end users can navigate or zoom in and out.
 
-Its focus is on enabling end users to constitute their own custom sets of views for the data exposed by their various sources, generally in ways that are not proposed by the front-ends that these sources might already provide. 
+Its focus is on enabling end users to constitute their own custom sets of views for the data exposed by various sources, generally in ways that are not proposed by the front-ends that these sources might already provide. 
 
 As such, *binjr* aims to become a valuable tool in forensic analysis when working with data sources that do not provide such flexible visualization natively (e.g. visualizing the coincidence of CPU usage spikes with user load metrics).
 
@@ -10,7 +10,7 @@ As such, *binjr* aims to become a valuable tool in forensic analysis when workin
 
 # How to use it?
 
-*binjr* is pure Java application, built on top of JavaFX, and requires a Java 1.8 JRE with JavaFX 8u40 or later.
+*binjr* is pure Java application, with a user interface built on top of JavaFX, and requires a Java 1.8 JRE with JavaFX 8u40 or later.
 
 The latest release can be found [here](https://github.com/fthevenet/binjr/releases/latest).
 
@@ -18,7 +18,7 @@ You can either build it from source using Maven, or use the provided runnable JA
 
 # How is it licensed?
 
-*binjr* is made available under the terms of the Apache License version 2.0.
+*binjr* is released under the Apache License version 2.0.
 
 # What is the status of the project?
 
