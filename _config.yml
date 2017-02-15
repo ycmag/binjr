@@ -1,3 +1,2 @@
 theme: jekyll-theme-slate
-show_downloads: true
-site.github.zip_url : xx
+show_downloads: false
