@@ -26,7 +26,7 @@ The latest release can be found [here](https://github.com/fthevenet/binjr/releas
 
 You can either build it from source using Maven, or use the provided runnable JAR file, which encapsulate all dependencies.
 
-# How is is licensed?
+# How is it licensed?
 
 *binjr* is made available under the terms of the Apache License version 2.0.
 
