@@ -16,7 +16,7 @@ For the moment, its feature set is far from complete, and absolutely no guarante
 
 Still, because binjr only consumes data, in a read-only fashion, the only risk you’re taking in trying it out is that it might not work quite as you like (or work at all…).
 
-For the moment, the only source with significant support is JRDS, a monitoring application written in Java, but the aim of the project is to quickly offer an API flexible enough to allow the rapid development of data adapters for any systems capable of exporting time series data.
+For the moment, the only source with significant support is [JRDS, a monitoring application written in Java](http://jrds.fr/), but the aim of the project is to quickly offer an API flexible enough to allow the rapid development of data adapters for any systems capable of exporting time series data.
 
 # How to use it?
 
@@ -25,7 +25,10 @@ For the moment, the only source with significant support is JRDS, a monitoring a
 The latest release can be found [here](https://github.com/fthevenet/binjr/releases/latest).
 
 You can either build it from source using Maven, or use the provided runnable JAR file, which encapsulate all dependencies.
-*binjr* is made available under the terms of the Apache License 2.0.
+
+# How is is licensed?
+
+*binjr* is made available under the terms of the Apache License version 2.0.
 
 
 
