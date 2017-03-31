@@ -8,6 +8,10 @@ As such, *binjr* aims to become a valuable tool in forensic analysis when workin
 
 ![Screenshot](/assets/images/screenshot01.png)
 
+![Screenshot](/assets/images/screenshot02.png)
+
+![Screenshot](/assets/images/screenshot03.png)
+
 # How to use it?
 
 *binjr* is pure Java application, with a user interface built on top of JavaFX, and requires a Java 1.8 JRE with JavaFX 8u40 or later.
