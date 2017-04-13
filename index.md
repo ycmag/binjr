@@ -10,7 +10,6 @@ As such, *binjr* aims to become a valuable tool in forensic analysis when workin
 
 ![Screenshot](/assets/images/screenshot02.png)
 
-![Screenshot](/assets/images/screenshot03.png)
 
 # How to use it?
 
