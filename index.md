@@ -1,6 +1,6 @@
 *binjr* is a Java based, open source, time series visualization tool. It can plot time series data from multiple sources as a set of charts, which end users can navigate or zoom in and out.
 
-It is a client application, packaged as a single executable JAR file and has no other requirement than a Java Runtime Environment of the correct version.
+It is a client application, packaged as a single executable JAR file and has no other requirement than a compatible Java Runtime Environment.
 
 Its focus is on enabling end users to constitute their own custom sets of views for the data exposed by various sources, generally in ways that are not proposed by the front-ends these sources might already propose. 
 
@@ -20,7 +20,7 @@ The latest release can be found  [here](https://github.com/fthevenet/binjr/relea
 
 You can either build it from source using Maven after cloning the repository, or download binjr.jar.
 
-All dependencies are shaded inside the executable jar, so in order to start the application simply run: java -jar binj.jar (or double-click the jar file if you're environment is configured to handle such an action).
+All dependencies are shaded inside the executable jar, so in order to start the application simply run: java -jar binj.jar (or double-click the jar file, provided your environment is configured adequately).
 
 The documentation can be found [here](https://github.com/fthevenet/binjr/wiki/Reference)
 
