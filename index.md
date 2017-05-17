@@ -23,7 +23,7 @@ You can either build it from source using Maven after cloning the repository, or
 All dependencies are packaged inside the executable jar, so in order to start the application simply run: java -jar binj.jar (or double-click the jar file, provided your environment is configured adequately).
 
 ## Getting help
-The documentation can be found [here](https://github.com/fthevenet/binjr/wiki/Reference). It's no yet complete, but getting there.
+The documentation can be found [here](https://github.com/fthevenet/binjr/wiki/Reference). It's not yet complete, but getting there.
 
 If you encounter an issue, or would like to suggest an enhancement or a new feature, you may do so [here](https://github.com/fthevenet/binjr/issues).
 
