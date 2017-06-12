@@ -14,7 +14,7 @@ As such, *binjr* aims to become a valuable tool in forensic analysis when workin
 
 *binjr* is Java application, built on top of JavaFX, and requires a Java Runtime Environement version 1.8 with JavaFX version 8u40 or later.
 
-Using the latest available version of either Oracle's Hotspot or OpenJDK (with OpenJFX) is highly recommended, as JavaFX is still an area where bug fixes and performance improvements are routinely provided with each new version.
+Using the latest available version is highly recommended, as JavaFX is still an area where bug fixes and performance improvements are routinely provided with each new version.
 
 The latest release can be found  [here](https://github.com/fthevenet/binjr/releases/latest) 
 
