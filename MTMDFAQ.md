@@ -13,7 +13,7 @@
 	
 ***
 
-3)	_**Well in that case you should have called it "ginjr"; it's even more full of nerdy street creds, isn't?**_
+3)	_**Well in that case you should have called it "ginjr"; it's even more worthy of nerdy street creds, isn't?**_
 
 	Yay, I know, you're right. But I realized that too late and couldn't be bothered refactoring everything at that stage. Plus I'd already bought the domain name, and I'm far too cheap to buy another one.
 	
