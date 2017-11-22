@@ -81,6 +81,4 @@
 ***
 
 
-(*) Mandatory Totally Made Up FAQ**
-
-(**) Seriously? You don't know what FAQ means?!?
+(*) Mandatory Totally Made Up FAQ
