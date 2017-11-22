@@ -39,7 +39,7 @@
 	
 ***
 
-7)	_**I am using Cacti, Munin, some other tool base on RRDTool or RRD4J, etc... It already presents time series as charts but it does so as static bitmap, so navigating isn't all that great. Can I use binjr to present that data in a more flexible way?**_
+7)	_**I am using Cacti, Munin, some other tool base on RRDTool or RRD4J, etc... It already presents time series as charts but it does so by producing static images that you can pan or zoom, so the overall experience isn't all that great. Can I use binjr to present that data in a more flexible way?**_
 
 	This is precisely what binjr was made for, so yes it can probably help. But... before that can happen, the code needed to specifically retrieve the raw data from the source will likely need to be written. Feel free to propose support for a specific data source as an enhancement [here](https://github.com/fthevenet/binjr/issues), but be aware that the available bandwidth of the contributors is limited, so unless extra help is provided, any significant enhancement proposal is unlikely to come to fruition.
 	
