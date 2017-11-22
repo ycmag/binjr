@@ -2,8 +2,7 @@
 
 1)	_**binjr ??!? How the hell do you say that?**_
 
-	Well, I say "binger", as in ginger, but you're welcome to say it however you want. That's how gloriously magnanimous I am, you see.
-
+	Well, I say "binger", as in ginger, but you're welcome to say it however you want.
 ***
 
 2)	_**binjr ??!? What the hell does it mean?**_
