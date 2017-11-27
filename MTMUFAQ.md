@@ -3,7 +3,7 @@ title: MTMUFAQ
 layout: default
 ---
 
-# MTMUFAQ<sup>(1)</sup>
+# MTMUFAQ*
 
 1) _**binjr ??!? How the hell do you say that?**_
 
@@ -84,4 +84,4 @@ If all else fails, please open an issue [here](https://github.com/fthevenet/binj
 ***
 
 
-<sup>(1) Mandatory Totally Made Up FAQ</sup>
+<sup>* Mandatory Totally Made Up FAQ</sup>
