@@ -48,5 +48,5 @@ If you would like to contribute, please sumbit a pull request.
 
 ## Where's the FAQ? You've got to have a FAQ!
 
-Fret not; [here](http://binjr.eu/MTMUFAQ.html) it is...
+Fret not; [here]({{ site.url }}/MTMUFAQ.html) it is...
 
