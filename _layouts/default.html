@@ -12,7 +12,7 @@
     <title>{{ site.title | default: site.github.repository_name }}</title>
   </head>
 	
-  <script src="/js/jquery.min.js"></script>
+  <script src="{{ site.url }}/js/jquery.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
         GetLatestReleaseInfo();
@@ -52,19 +52,20 @@
           <a id="binjr_logo" href="{{ site.url }}"></a> 
           
           <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+		
+	  <div class="container">
+            <div><a class="binjr-download-jar" href="https://github.com/fthevenet/binjr/releases/latest">JAR</a></div>
+            <div><a class="binjr-download-msi" href="https://github.com/fthevenet/binjr/releases/latest">Windows</a></div>
+            <div><a class="binjr-download-dmg"  href="https://github.com/fthevenet/binjr/releases/latest">MacOS</a></div>
+            <div><a class="binjr-download-rpm"  href="https://github.com/fthevenet/binjr/releases/latest">Linux (RPM)</a></div>
+            <div><a class="binjr-download-deb"  href="https://github.com/fthevenet/binjr/releases/latest">Linux (DEB)</a></div>
+          </div>       
 
           {% if site.show_downloads %}
             <section id="downloads">
-	      <div class="container">
-	        <div><a class="binjr-download-jar" href="{{ site.github.latest_release }}">JAR</a></div>
-	        <div><a class="binjr-download-msi" href="{{ site.github.latest_release }}">Windows</a></div>
-	        <div><a class="binjr-download-dmg"  href="{{ site.github.latest_release }}">MacOS</a></div>
-	        <div><a class="binjr-download-rpm"  href="{{ site.github.latest_release }}">Linux (RPM)</a></div>
-	        <div><a class="binjr-download-deb"  href="{{ site.github.latest_release }}">Linux (DEB)</a></div>
-              </div>         
-              <!--<a href="https://github.com/fthevenet/binjr/releases/latest">Latest Release</a>
+	      <a href="https://github.com/fthevenet/binjr/releases/latest">Latest Release</a>
               <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>-->
+              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
             </section>
           {% endif %}
         </header>
