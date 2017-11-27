@@ -1,13 +1,13 @@
 ---
-title: MTMDFAQ
+title: MTMUFAQ
 layout: default
 ---
 
-# MTMDFAQ*
+# MTMUFAQ*
 
-1)	_**binjr ??!? How the hell do you say that?**_
+1) _**binjr ??!? How the hell do you say that?**_
 
-	Well, I say "binger", as in ginger, but you're welcome to say it however you want.
+Well, I say "binger", as in ginger, but you're welcome to say it however you want.
 ***
 
 2)	_**binjr ??!? What the hell does it mean?**_
