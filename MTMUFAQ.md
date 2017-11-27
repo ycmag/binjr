@@ -3,7 +3,7 @@ title: MTMUFAQ
 layout: default
 ---
 
-# MTMUFAQ*
+# MTMUFAQ<sup>(1)</sup>
 
 1) _**binjr ??!? How the hell do you say that?**_
 
@@ -15,7 +15,7 @@ Well, I say "binger", as in ginger, but you're welcome to say it however you wan
 
 It is, sadly, Yet Another Oh-So-Clever Recursive Acronym (YAOSCRA??), and it stands for "**B**injr **I**s **N**ot a **J**RDS **R**ewrite". 
 
-[JRDS](http://jrds.fr) is a monitoring application which is the first (and so far, sole) compatible source of data for binjr. As the name implies, using JRDS extensively and getting frustrated with the limitations of its user interface, was the main inspiration for writing this tool.
+[JRDS](http://jrds.fr) is a monitoring application which was the first compatible source of data for binjr. As the name implies, using JRDS extensively and getting frustrated with the limitations of its user interface, was the main inspiration for writing this tool.
 	
 ***
 
@@ -84,4 +84,4 @@ If all else fails, please open an issue [here](https://github.com/fthevenet/binj
 ***
 
 
-(*) Mandatory Totally Made Up FAQ
+<sup>(1) Mandatory Totally Made Up FAQ</sup>
