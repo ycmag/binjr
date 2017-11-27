@@ -6,9 +6,9 @@ As such, *binjr* aims to become a valuable tool in forensic analysis when workin
 
 It is a client application, packaged as a single executable JAR file and has no other requirement than a compatible Java Runtime Environment.
 
-![Screenshot](http://www.binjr.eu/assets/images/screenshot01.png)
+![Screenshot]({{ site.url }}/assets/images/screenshot01.png)
 
-![Screenshot](http://www.binjr.eu/assets/images/screenshot02.png)
+![Screenshot]({{ site.url }}/assets/images/screenshot02.png)
 
 ## Getting started
 
