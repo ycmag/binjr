@@ -1,5 +1,6 @@
 ---
 title: MTMDFAQ
+layout: default
 ---
 
 # MTMDFAQ*
