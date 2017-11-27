@@ -53,13 +53,7 @@
           
           <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 		
-	  <div class="download_bar">
-            <div><a class="btn binjr-download-jar fa fa-archive" href="https://github.com/fthevenet/binjr/releases/latest"> JAR</a></div>
-            <div><a class="btn binjr-download-msi fa fa-windows" href="https://github.com/fthevenet/binjr/releases/latest"> Windows</a></div>
-            <div><a class="btn binjr-download-dmg fa fa-apple"  href="https://github.com/fthevenet/binjr/releases/latest"> MacOS</a></div>
-            <div><a class="btn binjr-download-rpm fa fa-linux"  href="https://github.com/fthevenet/binjr/releases/latest"> Linux (RPM)</a></div>
-            <div><a class="btn binjr-download-deb fa fa-linux"  href="https://github.com/fthevenet/binjr/releases/latest"> Linux (DEB)</a></div>
-          </div>       
+	      
 
           {% if site.show_downloads %}
             <section id="downloads">
@@ -73,6 +67,13 @@
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
+       <div class="inner download_bar">
+         <div><a class="btn binjr-download-jar fa fa-archive" href="https://github.com/fthevenet/binjr/releases/latest"> JAR</a></div>
+         <div><a class="btn binjr-download-msi fa fa-windows" href="https://github.com/fthevenet/binjr/releases/latest"> Windows</a></div>
+         <div><a class="btn binjr-download-dmg fa fa-apple"  href="https://github.com/fthevenet/binjr/releases/latest"> MacOS</a></div>
+         <div><a class="btn binjr-download-rpm fa fa-linux"  href="https://github.com/fthevenet/binjr/releases/latest"> Linux (RPM)</a></div>
+        <div><a class="btn binjr-download-deb fa fa-linux"  href="https://github.com/fthevenet/binjr/releases/latest"> Linux (DEB)</a></div>
+      </div>   
       <section id="main_content" class="inner">
         {{ content }}
       </section>
