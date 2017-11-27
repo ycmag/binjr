@@ -12,14 +12,14 @@
     <title>{{ site.title | default: site.github.repository_name }}</title>
   </head>
 	
-  <script src="binjr_files/jquery.min.js"></script>
+  <script src="/js/jquery.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
         GetLatestReleaseInfo();
     });
   
     function GetLatestReleaseInfo() {
-        $.getJSON("https://api.github.com/repos/fthevenet/binjr/releases/latest").done(function (release) {
+        $.getJSON("{{ site.github.api_url }}/{{ site.github.repository_nwo }}/releases/latest").done(function (release) {
             for (var i = 0; i < release.assets.length; i++) {
               if (release.assets[i].name.endsWith("jar")){
                 $(".binjr-download-jar").attr("href", release.assets[i].browser_download_url);
@@ -56,11 +56,11 @@
           {% if site.show_downloads %}
             <section id="downloads">
 	      <div class="container">
-	        <div><a class="binjr-download-jar" href="https://github.com/fthevenet/binjr/releases/latest">JAR</a></div>
-	        <div><a class="binjr-download-msi" href="https://github.com/fthevenet/binjr/releases/latest">Windows</a></div>
-	        <div><a class="binjr-download-dmg"  href="https://github.com/fthevenet/binjr/releases/latest">MacOS</a></div>
-	        <div><a class="binjr-download-rpm"  href="https://github.com/fthevenet/binjr/releases/latest">Linux (RPM)</a></div>
-	        <div><a class="binjr-download-deb"  href="https://github.com/fthevenet/binjr/releases/latest">Linux (DEB)</a></div>
+	        <div><a class="binjr-download-jar" href="{{ site.github.latest_release }}">JAR</a></div>
+	        <div><a class="binjr-download-msi" href="{{ site.github.latest_release }}">Windows</a></div>
+	        <div><a class="binjr-download-dmg"  href="{{ site.github.latest_release }}">MacOS</a></div>
+	        <div><a class="binjr-download-rpm"  href="{{ site.github.latest_release }}">Linux (RPM)</a></div>
+	        <div><a class="binjr-download-deb"  href="{{ site.github.latest_release }}">Linux (DEB)</a></div>
               </div>         
               <!--<a href="https://github.com/fthevenet/binjr/releases/latest">Latest Release</a>
               <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
