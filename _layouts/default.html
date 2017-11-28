@@ -43,7 +43,7 @@
   </script>
 
   <body>
-
+   <div id="page_wrap">
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
@@ -60,13 +60,7 @@
             <div><a class="fa_icons fa fa-linux"/><a class="btn binjr-download-deb" href="https://github.com/fthevenet/binjr/releases/latest"> Linux (DEB)</a></div>
             <div><a class="fa_icons fa fa-archive"/><a class="btn binjr-download-jar" href="https://github.com/fthevenet/binjr/releases/latest"> JAR</a></div>
           </div>       
-          {% if site.show_downloads %}
-            <section id="downloads">
-	      <a href="https://github.com/fthevenet/binjr/releases/latest">Latest Release</a>
-              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
-            </section>
-          {% endif %}
+	  <p></p>
         </header>
     </div>
 
@@ -85,8 +79,6 @@
         {% endif %}       
       </footer>
     </div>
-
-
-
+   </div>
   </body>
 </html>
