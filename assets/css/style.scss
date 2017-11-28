@@ -35,11 +35,11 @@ a:hover,a:focus {
         font-weight:normal
 }
 
-.btn a:hover,
-.btn a:focus {
+.btn > a {
         text-decoration:none;
         font-weight:normal
 }
+
 .download_bar > div {
     display: inline-block;
     *display: inline; /* For IE7 */
