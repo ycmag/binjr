@@ -53,7 +53,10 @@ a:hover,a:focus {
 .btn {
     font-family:'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: white;
-    background-color: #4BACC6;
+    background-color: transparent;/* #4BACC6;*/
+	border-color:  #DAEEF3;
+	border-style: solid;
+	border-width: 1px;
     border-radius: 2px;
     padding: 10px 0px;
     margin: 10px 10px 0px 10px;
