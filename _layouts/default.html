@@ -11,7 +11,7 @@
 
     <title>{{ site.title | default: site.github.repository_name }}</title>
   </head>
- <!-- <script src="https://use.fontawesome.com/4f6fcc58d8.js"></script>	-->
+  <script src="https://use.fontawesome.com/4f6fcc58d8.js"></script>	
   <script src="{{ site.url }}/js/jquery.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
@@ -54,11 +54,11 @@
           <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 		
 	  <div class="download_bar">
-            <div><a class="btn binjr-download-msi fa fa-windows" href="https://github.com/fthevenet/binjr/releases/latest"> Windows</a></div>
-            <div><a class="btn binjr-download-dmg fa fa-apple"  href="https://github.com/fthevenet/binjr/releases/latest"> MacOS</a></div>
-            <div><a class="btn binjr-download-rpm fa fa-linux"  href="https://github.com/fthevenet/binjr/releases/latest"> Linux (RPM)</a></div>
-            <div><a class="btn binjr-download-deb fa fa-linux"  href="https://github.com/fthevenet/binjr/releases/latest"> Linux (DEB)</a></div>
-	    <div><a class="btn binjr-download-jar fa fa-archive" href="https://github.com/fthevenet/binjr/releases/latest"> JAR</a></div>
+            <div><a class="fa_icons fa fa-windows"/><a class="btn binjr-download-msi" href="https://github.com/fthevenet/binjr/releases/latest"> Windows</a></div>
+            <div><a class="fa_icons fa fa fa-apple"/><a class="btn binjr-download-dmg" href="https://github.com/fthevenet/binjr/releases/latest"> MacOS</a></div>
+            <div><a class="fa_icons fa fa-linux"/><a class="btn binjr-download-rpm" href="https://github.com/fthevenet/binjr/releases/latest"> Linux (RPM)</a></div>
+            <div><a class="fa_icons fa fa-linux"/><a class="btn binjr-download-deb" href="https://github.com/fthevenet/binjr/releases/latest"> Linux (DEB)</a></div>
+            <div><a class="fa_icons fa fa-archive"/><a class="btn binjr-download-jar" href="https://github.com/fthevenet/binjr/releases/latest"> JAR</a></div>
           </div>       
           {% if site.show_downloads %}
             <section id="downloads">
