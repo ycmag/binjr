@@ -1,5 +1,10 @@
----
----
+:root {
+    --var-radius: 10px;
+    --dark-bg-color:#204656;
+    --dark-gradient-color:#2C687F;
+    --light-bg-color:#DAEEF3;
+}
+
 .highlight table td {
     padding: 5px
 }
@@ -17,7 +22,7 @@
     color: #797676;
     font-weight: bold
 }
-
+main
 .highlight .c1 {
     color: #777772;
     font-style: italic
@@ -395,7 +400,7 @@ table {
 body {
     box-sizing: border-box;
     color: #373737;
-    background: #212121;
+    background: #DAEEF3;
     font-size: 16px;
     font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -447,7 +452,9 @@ p {
 }
 
 footer p {
-    color: #f2f2f2
+    color: #f2f2f2;
+    position:absolute;
+    bottom:12px;
 }
 
 a {
@@ -474,7 +481,7 @@ a:focus {
 
 footer a {
     color: #F2F2F2;
-    text-decoration: underline
+    *text-decoration: underline
 }
 
 em,
@@ -606,15 +613,30 @@ form {
     padding: 20px
 }
 
+
 .outer {
-    width: 100%
+    width: 100%;
+    border-radius:  0px;;
+    border-radius: 0px;;
 }
+
+
 
 .inner {
     position: relative;
-    max-width: 640px;
-    padding: 20px 10px;
+    *max-width: 900px;
+    *box-shadow: 0 0 20px rgba(37, 37, 37, 0.911); 
+    *border: 1px solid red;
+    padding: 10px 50px;
     margin: 0 auto
+}
+
+#header_wrap .inner {
+    background: url(sep_background.png) repeat-x bottom  center #204656;
+    border-top-left-radius: 0px;;
+    border-top-right-radius: 0px;;
+    padding: 50px 50px 30px 50px;
+    padding-bottom: 70px;
 }
 
 #forkme_banner {
@@ -633,14 +655,12 @@ form {
 }
 
 #header_wrap {
-    background: url(../images/sep_background.png) repeat-x bottom  center #204656;
-    padding-bottom: 70px;
+    background:#DAEEF3;
+   
 
 } 
 
-#header_wrap .inner {
-    padding: 50px 10px 30px 10px
-}
+
 
 #project_title {
     margin: 0;
@@ -704,11 +724,34 @@ form {
 }
 
 #main_content {
-    padding-top: 40px
+    background: #DAEEF3;
+    padding-top: 40px;
 }
 
-#footer_wrap {
-    background: #204656
+#footer_wrap {   
+    background:#DAEEF3;
+    bottom:0;
+}
+
+#footer_wrap .inner{
+    *margin: 0;
+    
+   min-height: 90px;
+    background: url(sep_bottom.png) repeat-x top  center #204656;
+    border-bottom-left-radius: 0px;;
+    border-bottom-right-radius: 0px;;
+    *background: #204656;    
+}
+
+#page_wrap  {   
+    position: relative;
+    max-width: 900px;
+    box-shadow: 0 0 10px #204656; 
+    border: 1px solid #777777 ;
+    border-radius: 0px;;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 992px) {
@@ -795,12 +838,6 @@ form {
     }
 }
 
-.inner {
-    position: relative;
-    max-width: 800px;
-    padding: 20px 10px;
-    margin: 0 auto
-}
 
 #logo {
     position: relative;
