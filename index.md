@@ -8,7 +8,7 @@ It is a Java based client application, packaged as a single executable JAR file 
 
 ![Screenshot]({{ site.url }}/assets/images/screenshot01.png)
 
-![Screenshot]({{ site.url }}/assets/images/screenshot02.png)
+![Screenshot]({{ site.url }}/assets/images/screenshot03.png)
 
 ## Getting started
 
