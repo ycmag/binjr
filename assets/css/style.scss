@@ -1,10 +1,12 @@
 ---
----
+--- 
 
 $border-radius: 10px;
-$dark-bg-color: #204656;
-$dark-gradient-color:  #2C687F;
+$dark-bg-color: 132c35;
+$binjr-color:#204656;
+$binjr-gradient-color : #2C687F;
 $light-bg-color: #DAEEF3;
+$page_width:900px;
 
 .highlight table td {
     padding: 5px
@@ -454,8 +456,8 @@ p {
 
 footer p {
     color: #f2f2f2;
-    position:absolute;
-    bottom:12px;
+    position: absolute;
+    bottom: 12px;
 }
 
 a {
@@ -614,13 +616,10 @@ form {
     padding: 20px
 }
 
-
 .outer {
     width: 100%;
     border-radius: 20px;
 }
-
-
 
 .inner {
     position: relative;
@@ -629,11 +628,11 @@ form {
 }
 
 #header_wrap .inner {
-    background: url(../images/sep_background.png) repeat-x bottom  center $dark-bg-color;
+    background: url(../images/sep_background.png) repeat-x bottom center $binjr-color;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
     padding: 50px 50px 30px 50px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
 }
 
 #forkme_banner {
@@ -652,10 +651,8 @@ form {
 }
 
 #header_wrap {
-    background:$light-bg-color;
-} 
-
-
+    background: $light-bg-color;
+}
 
 #project_title {
     margin: 0;
@@ -709,7 +706,7 @@ form {
 }
 
 .tar_download_link:hover {
-    background:url(../images/sprite_download.png) no-repeat top right 
+    background: url(../images/sprite_download.png) no-repeat top right
 }
 
 #main_content_wrap {
@@ -718,34 +715,115 @@ form {
 
 #main_content {
     background: $light-bg-color;
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
-#footer_wrap {   
-    background:$light-bg-color;
-    bottom:0;
+#footer_wrap {
+    background: $light-bg-color;
+    bottom: 0;
 }
 
-#footer_wrap .inner{
-    *margin: 0;
-    
-   min-height: 90px;
-    background: url(../images/sep_bottom.png) repeat-x top  center $dark-bg-color;
+#footer_wrap .inner {
+    min-height: 90px;
+    background: url(../images/sep_bottom.png) repeat-x top center $binjr-color;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
 }
 
+@media screen and (max-width: 992px) {
+    img {
+        max-width: 100%
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px
+    }
+    #downloads {
+        display: none
+    }
+    .inner {
+        min-width: 320px;
+        max-width: 480px
+    }
+    #project_title {
+        font-size: 32px
+    }
+    h1 {
+        font-size: 28px
+    }
+    h2 {
+        font-size: 24px
+    }
+    h3 {
+        font-size: 21px
+    }
+    h4 {
+        font-size: 18px
+    }
+    h5 {
+        font-size: 14px
+    }
+    h6 {
+        font-size: 12px
+    }
+    code,
+    pre {
+        font-size: 11px
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 14px
+    }
+    #downloads {
+        display: none
+    }
+    .inner {
+        min-width: 240px;
+        max-width: 320px
+    }
+    #project_title {
+        font-size: 28px
+    }
+    h1 {
+        font-size: 24px
+    }
+    h2 {
+        font-size: 21px
+    }
+    h3 {
+        font-size: 18px
+    }
+    h4 {
+        font-size: 16px
+    }
+    h5 {
+        font-size: 14px
+    }
+    h6 {
+        font-size: 12px
+    }
+    code,
+    pre {
+        min-width: 240px;
+        max-width: 320px;
+        font-size: 11px
+    }
+}
+
 #page_wrap {
     position: relative;
-    max-width: 900px;
-    box-shadow: 0 0 10px black; 
-    border: 1px solid $dark-bg-color;
+    max-width: $page_width;
+    box-shadow: 0 0 10px black;
+    border: 1px solid $binjr-color;
     border-radius: $border-radius;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px
 }
-
 
 #logo {
     position: relative;
@@ -778,7 +856,8 @@ a:focus {
     font-weight: normal
 }
 
-.fa_icons, .fa_icons:hover {
+.fa_icons,
+.fa_icons:hover {
     color: ghostwhite;
     text-decoration: none;
 }
@@ -790,16 +869,16 @@ a:focus {
     width: 18%;
     text-align: center;
     margin: 5px;
-    background: $dark-bg-color;
-    background: -moz-linear-gradient(top, $dark-gradient-color, $dark-bg-color);
-    background: -webkit-linear-gradient(top, $dark-gradient-color, $dark-bg-color);
-    background: -ms-linear-gradient(top, $dark-gradient-color, $dark-bg-color);
-    background: -o-linear-gradient(top, $dark-gradient-color, $dark-bg-color);
-    background: linear-gradient(top, $dark-gradient-color, $dark-bg-color);
+    background: $binjr-color;
+    background: -moz-linear-gradient(top, $binjr-gradient-color, $binjr-color);
+    background: -webkit-linear-gradient(top, $binjr-gradient-color, $binjr-color);
+    background: -ms-linear-gradient(top, $binjr-gradient-color, $binjr-color);
+    background: -o-linear-gradient(top, $binjr-gradient-color, $binjr-color);
+    background: linear-gradient(top, $binjr-gradient-color, $binjr-color);
     border-radius: 4px;
     padding: 6px 0px;
     font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .btn {
@@ -809,7 +888,6 @@ a:focus {
     position: relative;
     width: 100%;
 }
-
 
 .btn:hover {
     text-shadow: 0px 0px 20px $light-bg-color;
