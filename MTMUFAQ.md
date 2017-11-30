@@ -3,7 +3,7 @@ title: MTMUFAQ
 layout: default
 ---
 
-# MTMUFAQ[*](#*_Mandatory_Totally_Made_Up_FAQ)
+# MTMUFAQ[*](#*-Mandatory-Totally-Made-Up-FAQ)
 
 1) _**binjr ??!? How the hell do you say that?**_
 
