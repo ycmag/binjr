@@ -52,7 +52,7 @@ The latest release can be found [here](https://github.com/fthevenet/binjr/releas
   
   The source code repository for *binjr* is hosted on [Github](https://www.github.com) and can be found [here]({{ site.github.repository_url }}).
   
-  [Clone]({{ site.github.clone_url }}) the git repo or download a [zip]({{ site.github.zip_url }}) or [tar.gz]({{{ site.github.tar_url }}}) archive that contains all the source code, and build it with Maven 3 and a 1.8 Java Development Kit.
+  Clone the [git repo]({{ site.github.clone_url }}) or download a [zip]({{ site.github.zip_url }}) or [tar.gz]({{{ site.github.tar_url }}}) archive that contains the source code, and build it with Maven 3 and a 1.8 Java Development Kit.
 
 ## Getting help
 
@@ -62,11 +62,9 @@ If you encounter any problem starting the application, please check the [trouble
 
 If all else failes, or if you would like to suggest an enhancement or a new feature, please open a ticket [here](https://github.com/fthevenet/binjr/issues).
 
+Finally, if you've got some burning questions on the how or why behind *binjr* (and are not expecting dead serious answers...), try your luck with the [FAQ](MTMUFAQ). 
+
 ## How is it licensed?
 
 *binjr* is released under the [Apache License version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
-
-## Where's the FAQ? You've got to have a FAQ!
-
-Fret not; [here]({{ site.url }}/MTMUFAQ.html) it is!
 
