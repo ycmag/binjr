@@ -49,15 +49,18 @@ The latest release can be found [here](https://github.com/fthevenet/binjr/releas
   If using the bundle for your operating system, it doesn't matter what other version of Java, if any, is installed on your computer.
 
 * _As source code_
-
-  A zip or tar.gz archive that contains all the source code, which can be built using Maven 3 and a 1.8 Java Development Kit.
+  
+  The source code repository for *binjr* is hosted on [Github](https://www.github.com) and can be found [here]({{ site.github.repository_url }}).
+  
+  [Clone]({{ site.github.clone_url }}) the git repo or download a [zip]({{ site.github.zip_url }}) or [tar.gz]({{{ site.github.tar_url }}}) archive that contains all the source code, and build it with Maven 3 and a 1.8 Java Development Kit.
 
 ## Getting help
-The documentation can be found [here](https://github.com/fthevenet/binjr/wiki/Reference).
 
-If you encounter an issue, or would like to suggest an enhancement or a new feature, you may do so [here](https://github.com/fthevenet/binjr/issues).
+The user guide can be found [here](/user_manual).
 
-If you would like to contribute, please sumbit a pull request.
+If you encounter any problem starting the application, please check the [troubleshooting page](troubleshooting) for a list of common issues and solutions.
+
+If all else failes, or if you would like to suggest an enhancement or a new feature, please open a ticket [here](https://github.com/fthevenet/binjr/issues).
 
 ## How is it licensed?
 

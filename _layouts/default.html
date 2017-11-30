@@ -1,71 +1,124 @@
 <!DOCTYPE html>
 <html>
-	
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <meta name="description" content="{{ site.title | default: site.github.repository_name }} : {{ site.description | default: site.github.project_tagline }}">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" >
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="/assets/css/photo.css"> 
-    <script src="/js/photo.js"></script> 
-    <script src="https://use.fontawesome.com/4f6fcc58d8.js"></script>	
-    <script src="/js/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-          GetLatestReleaseInfo();
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width,maximum-scale=2">
+  <meta name="description" content="{{ site.title | default: site.github.repository_name }} : {{ site.description | default: site.github.project_tagline }}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ " /favicon.ico " | prepend: site.baseurl }}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" href="/assets/css/photo.css">
+  <script src="/js/photo.js"></script>
+  <script src="https://use.fontawesome.com/4f6fcc58d8.js"></script>
+  <script src="/js/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      GetLatestReleaseInfo();
+    });
+
+    function GetLatestReleaseInfo() {
+      $.getJSON("{{ site.github.api_url }}/repos/{{ site.github.repository_nwo }}/releases/latest").done(function (release) {
+        for (var i = 0; i < release.assets.length; i++) {
+          if (release.assets[i].name.endsWith("jar")) {
+            $(".binjr-download-jar").attr("href", release.assets[i].browser_download_url);
+          }
+          if (release.assets[i].name.endsWith("msi")) {
+            $(".binjr-download-msi").attr("href", release.assets[i].browser_download_url);
+          }
+          if (release.assets[i].name.endsWith("rpm")) {
+            $(".binjr-download-rpm").attr("href", release.assets[i].browser_download_url);
+          }
+          if (release.assets[i].name.endsWith("deb")) {
+            $(".binjr-download-deb").attr("href", release.assets[i].browser_download_url);
+          }
+          if (release.assets[i].name.endsWith("dmg")) {
+            $(".binjr-download-dmg").attr("href", release.assets[i].browser_download_url);
+          }
+        }
       });
-  
-      function GetLatestReleaseInfo() {
-          $.getJSON("{{ site.github.api_url }}/repos/{{ site.github.repository_nwo }}/releases/latest").done(function (release) {
-              for (var i = 0; i < release.assets.length; i++) {
-                if (release.assets[i].name.endsWith("jar")){
-                  $(".binjr-download-jar").attr("href", release.assets[i].browser_download_url);
-                }      
-                if (release.assets[i].name.endsWith("msi")){
-                  $(".binjr-download-msi").attr("href", release.assets[i].browser_download_url);
-                }   
-                if (release.assets[i].name.endsWith("rpm")){
-                  $(".binjr-download-rpm").attr("href", release.assets[i].browser_download_url);
-                }   
-                if (release.assets[i].name.endsWith("deb")){
-                  $(".binjr-download-deb").attr("href", release.assets[i].browser_download_url);
-                }   
-                if (release.assets[i].name.endsWith("dmg")){
-                  $(".binjr-download-dmg").attr("href", release.assets[i].browser_download_url);
-                }         
-              }                                
-          });
+    }
+  </script>
+  <title>{{ site.title | default: site.github.repository_name }}</title>
+</head>
+
+<body>
+  <a href="{{ site.github.repository_url }}" class="github-corner" aria-label="View source on Github">
+    <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0;"
+      aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+      <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+    </svg>
+  </a>
+  <style>
+    .github-corner:hover .octo-arm {
+      animation: octocat-wave 560ms ease-in-out
+    }
+
+    @keyframes octocat-wave {
+      0%,
+      100% {
+        transform: rotate(0)
       }
-    </script>
-    <title>{{ site.title | default: site.github.repository_name }}</title>
-  </head>
-  
-  <body>
-   <div id="page_wrap">
+      20%,
+      60% {
+        transform: rotate(-25deg)
+      }
+      40%,
+      80% {
+        transform: rotate(10deg)
+      }
+    }
+
+    @media (max-width:500px) {
+      .github-corner:hover .octo-arm {
+        animation: none
+      }
+      .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+      }
+    }
+  </style>
+  <div id="page_wrap">
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
-          
-          <a id="binjr_logo" href="{{ site.url }}"></a> 
-          
-          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-		
-	  <div class="download_bar">
-            <div><a class="fa_icons fa fa-windows"/><a class="btn binjr-download-msi" href="https://github.com/fthevenet/binjr/releases/latest"> Windows</a></div>
-            <div><a class="fa_icons fa fa fa-apple"/><a class="btn binjr-download-dmg" href="https://github.com/fthevenet/binjr/releases/latest"> MacOS</a></div>
-            <div><a class="fa_icons fa fa-linux"/><a class="btn binjr-download-rpm" href="https://github.com/fthevenet/binjr/releases/latest"> Linux (RPM)</a></div>
-            <div><a class="fa_icons fa fa-linux"/><a class="btn binjr-download-deb" href="https://github.com/fthevenet/binjr/releases/latest"> Linux (DEB)</a></div>
-            <div><a class="fa_icons fa fa-archive"/><a class="btn binjr-download-jar" href="https://github.com/fthevenet/binjr/releases/latest"> JAR</a></div>
-          </div>       
-	  <p></p>
-        </header>
+      <header class="inner">
+        
+        <a id="binjr_logo" href="{{ site.url }}"></a>
+
+        <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+
+        <div class="download_bar">
+          <div>
+            <a class="fa_icons fa fa-windows" />
+            <a class="btn binjr-download-msi" href="https://github.com/fthevenet/binjr/releases/latest"> Windows</a>
+          </div>
+          <div>
+            <a class="fa_icons fa fa fa-apple" />
+            <a class="btn binjr-download-dmg" href="https://github.com/fthevenet/binjr/releases/latest"> MacOS</a>
+          </div>
+          <div>
+            <a class="fa_icons fa fa-linux" />
+            <a class="btn binjr-download-rpm" href="https://github.com/fthevenet/binjr/releases/latest"> Linux (RPM)</a>
+          </div>
+          <div>
+            <a class="fa_icons fa fa-linux" />
+            <a class="btn binjr-download-deb" href="https://github.com/fthevenet/binjr/releases/latest"> Linux (DEB)</a>
+          </div>
+          <div>
+            <a class="fa_icons fa fa-archive" />
+            <a class="btn binjr-download-jar" href="https://github.com/fthevenet/binjr/releases/latest"> JAR</a>
+          </div>
+        </div>
+        <p></p>
+      </header>
     </div>
 
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">      
+    <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         {{ content }}
       </section>
@@ -75,28 +128,37 @@
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         {% if site.github.is_project_page %}
-        <p class="copyright">© 2017 <a href="{{ site.github.owner_url }}">Frederic Thevenet</a></p>
-        {% endif %}       
+        <p class="copyright">© 2017
+          <a href="{{ site.github.owner_url }}">Frederic Thevenet</a>
+        </p>
+        {% endif %}
       </footer>
     </div>
-   </div>
+  </div>
 
-  </body>
-     <!-- Include this on pages you want the gallery to appear -->
-     <div id="PhotoViewer" class="photo-viewer">
-      <header class="photo-viewer--title">
-        <h1 id="PhotoViewerTitle">Image Title</h1>
-        <div id="PhotoViewerClose" class="photo-viewer--close"><a href="#">X</a></div>
-      </header>
-      <div class="photo-viewer--container">
-        <figure class="photo-viewer--current-image" id="PhotoViewerCurrentImageContainer">
-          <img id="PhotoViewerCurrentImage" src="">
-        </figure>
-      </div>
-      <div class="photo-viewer--controls">
-          <div id="PhotoViewerPreviousImage" class="photo-viewer--previous-image"><a href="#">&laquo; Previous</a></div>
-          <div id="PhotoViewerCount" class="photo-viewer--count">1/10</div>
-          <div id="PhotoViewerNextImage" class="photo-viewer--next-image"><a href="#">Next &raquo;</a></div>
-        </div>
+</body>
+<!-- Include this on pages you want the gallery to appear -->
+<div id="PhotoViewer" class="photo-viewer">
+  <header class="photo-viewer--title">
+    <h1 id="PhotoViewerTitle">Image Title</h1>
+    <div id="PhotoViewerClose" class="photo-viewer--close">
+      <a href="#">X</a>
     </div>
+  </header>
+  <div class="photo-viewer--container">
+    <figure class="photo-viewer--current-image" id="PhotoViewerCurrentImageContainer">
+      <img id="PhotoViewerCurrentImage" src="">
+    </figure>
+  </div>
+  <div class="photo-viewer--controls">
+    <div id="PhotoViewerPreviousImage" class="photo-viewer--previous-image">
+      <a href="#">&laquo; Previous</a>
+    </div>
+    <div id="PhotoViewerCount" class="photo-viewer--count">1/10</div>
+    <div id="PhotoViewerNextImage" class="photo-viewer--next-image">
+      <a href="#">Next &raquo;</a>
+    </div>
+  </div>
+</div>
+
 </html>
