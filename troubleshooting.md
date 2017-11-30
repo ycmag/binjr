@@ -1,4 +1,10 @@
-# JavaFX
+# Troubleshooting
+
+Although launching *binjr* should idealy be as simple as double-clicking an icon, sometimes things go wrong... 
+
+Here you'll find here answers to some issues commonly encountered when trying to run binjr.
+
+### JavaFX
 
 binjr relies on JavaFX for its user interface if is not present, it will fail to start.
 
@@ -13,7 +19,7 @@ For instance, if you're running Ubuntu 16.04, OpenJFX can be installed via:
 
     sudo apt-get install openjfx
 
-# Java 9
+### Java 9
 
 The compiled versions of binjr found on the [Release](https://github.com/fthevenet/binjr/releases) page, both JAR and native bundles, are built against Java 8 and are *not* compatible with Java 9.
 
@@ -23,7 +29,7 @@ Also, because JAXB, alongside the rest of the J2EE modules, is no longer implici
 
     java --add-modules java.xml.bind -jar binjr.jar
 
-# SSL/TLS and Certificates issues
+### SSL/TLS and Certificates issues
 
 If a certificate validation fails because a root CA certificate cannot be found in the certification path, you may need to import it into the JVM's trusted CA store (of course, ___only do that if you trust that CA___) :
 
@@ -31,7 +37,9 @@ If a certificate validation fails because a root CA certificate cannot be found 
       keytool -importcert -alias startssl -keystore $JAVA_HOME/jre/lib/security/cacerts -storepass changeit -file [myCaCert.der]
 
 
-# Kerberos authentication
+### Kerberos authentication
+
+*binjr* supports Kerberos authentication to http based sources via SPNEGO. If you're having troubles, please check the following:
 
 * Enable kerberos debug information for easier troubleshooting:
 
