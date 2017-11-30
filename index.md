@@ -6,9 +6,28 @@ As such, *binjr* aims to become a valuable tool in forensic analysis when workin
 
 It is a Java based client application, packaged as a single executable JAR file and has no other requirement than a compatible Java Runtime Environment, and runs on multiple Desktop environnements (Windows, MacOS and Linux).
 
-![Screenshot]({{ site.url }}/assets/images/screenshot01.png)
-
-![Screenshot]({{ site.url }}/assets/images/screenshot02.png)
+<div id="PhotoGallery" class="photo-gallery">
+  <figure class="photo-gallery--image">
+    <a href="../images/screenshot01.png" class="photo">
+      <img src="../images/screenshot01.png" alt="binjr screenshot 01">
+    </a>
+  </figure>
+  <figure class="photo-gallery--image">
+    <a href="../images/screenshot02.png" class="photo">
+      <img  src="../images/screenshot02.png" alt="binjr screenshot  02">
+    </a>
+  </figure> 
+  <figure class="photo-gallery--image">
+    <a href="binjr_files/screenshot03.png" class="photo" >
+      <img  src="../images/screenshot03.png" alt="binjr screenshot  03">
+    </a>
+  </figure> 
+  <figure class="photo-gallery--image">
+    <a href="../images/screenshot04.png" class="photo" >
+      <img  src="../images/screenshot04.png" alt="binjr screenshot  04>
+    </a>
+  </figure> 
+</div>
 
 ## Getting started
 
