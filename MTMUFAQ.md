@@ -84,4 +84,4 @@ If all else fails, please open an issue [here](https://github.com/fthevenet/binj
 ***
 
 
-<small>#######* Mandatory Totally Made Up FAQ</small>
+#####* Mandatory Totally Made Up FAQ
