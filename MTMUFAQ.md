@@ -5,7 +5,7 @@ layout: default
 
 # MTMUFAQ[\*](#-mandatory-totally-made-up-faq)
 
-***
+
 
 _**binjr ??!? How the hell do you say that?**_
 
