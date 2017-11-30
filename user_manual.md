@@ -1,13 +1,13 @@
 # Table of content
-* [Landing screen](https://github.com/fthevenet/binjr/wiki/Reference#landing-screen)
-* [Adding a source](https://github.com/fthevenet/binjr/wiki/Reference#adding-a-source)
-* [Adding a Worksheet](https://github.com/fthevenet/binjr/wiki/Reference#adding-a-worksheet)
-* [Adding series to a worksheet](https://github.com/fthevenet/binjr/wiki/Reference#adding-series-to-a-worksheet)
-* [Working with time-series](https://github.com/fthevenet/binjr/wiki/Reference#working-with-time-series)
-* [Managing workspaces](https://github.com/fthevenet/binjr/wiki/Reference#managing-workspaces)
+* [Landing screen](#landing-screen)
+* [Adding a source](#adding-a-source)
+* [Adding a Worksheet](#adding-a-worksheet)
+* [Adding series to a worksheet](#adding-series-to-a-worksheet)
+* [Working with time-series](#working-with-time-series)
+* [Managing workspaces](#managing-workspaces)
 * Settings
      
-# Landing screen
+## Landing screen
 The landing screen for binjr is composed of three main parts from left to right; the menu bar, which hosts icons for all of the main user interactions, the "source" pane where available time-series are displayed, and the "worksheet" pane where data representation and navigation takes place.
 
 ![](http://www.binjr.eu/assets/images/landing-page.png)
@@ -19,7 +19,7 @@ items.
 
 Click the icon again to hide the label and collapse the menu bar.
 
-# Adding a source
+## Adding a source
 
 A “source” is a link to the data provider for the time-series you’ll be
 manipulating with binjr.
@@ -39,7 +39,7 @@ by clicking on the “+” icon next to the last tab:
 
 ![](http://www.binjr.eu/assets/images/new-source-3.png)
 
-## Adding a JRDS source
+### Adding a JRDS source
 
 If you selected to add a JRDS instance as a source, the following dialog
 will show:
@@ -49,7 +49,7 @@ will show:
 Fill in the desired URL, time zone and type of view filter to open the
 source.
 
-# Adding a worksheet
+## Adding a worksheet
 
 A “worksheet” is where you’ll be adding from various sources the
 time-series you want to visualize.
@@ -84,13 +84,13 @@ When creating a new worksheet, you’ll be prompted to specify:
 -   The time zone for the time (e.g. X) axis
 -   The initial time interval of the series
 
-## Editing the name of an existing worksheet
+### Editing the name of an existing worksheet
 
 Once a worksheet has been created, you can change its name at any time by double-clicking on its tab:
 
 ![](http://www.binjr.eu/assets/images/edit-worksheet-name.png)
 
-# Adding series to a worksheet
+## Adding series to a worksheet
 
 Once one or more sources have been added, navigate to the indicator you want to add to a worksheet using the tree.
 Right-click on the one you want to add and a context menu appears:
@@ -105,16 +105,16 @@ You can also add additional series to an existing worksheet, by selecting "Add t
 
 ![](http://www.binjr.eu/assets/images/add-to-existing.png)
 
-# Working with time-series
+## Working with time-series
 
-## Navigating the chart
-### Scaling the Y axis
-### Zooming the chart
-### History
-## Time-series order and appearance
-### Selecting active series
-### Changing series order
-### Changing series color
-## Taking snapshots
+### Navigating the chart
+#### Scaling the Y axis
+#### Zooming the chart
+#### History
+### Time-series order and appearance
+#### Selecting active series
+#### Changing series order
+#### Changing series color
+### Taking snapshots
 
 # Managing workspaces
