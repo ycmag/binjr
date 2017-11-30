@@ -1,4 +1,4 @@
-# Table of content
+# User Guide
 * [Landing screen](#landing-screen)
 * [Adding a source](#adding-a-source)
 * [Adding a Worksheet](#adding-a-worksheet)
