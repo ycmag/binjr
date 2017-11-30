@@ -8,43 +8,40 @@
     <meta name="description" content="{{ site.title | default: site.github.repository_name }} : {{ site.description | default: site.github.project_tagline }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" >
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-
+    <link rel="stylesheet" href="/assets/css/photo.css"> 
+    <script src="/js/photo.js"></script> 
+    <script src="https://use.fontawesome.com/4f6fcc58d8.js"></script>	
+    <script src="/js/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          GetLatestReleaseInfo();
+      });
+  
+      function GetLatestReleaseInfo() {
+          $.getJSON("{{ site.github.api_url }}/repos/{{ site.github.repository_nwo }}/releases/latest").done(function (release) {
+              for (var i = 0; i < release.assets.length; i++) {
+                if (release.assets[i].name.endsWith("jar")){
+                  $(".binjr-download-jar").attr("href", release.assets[i].browser_download_url);
+                }      
+                if (release.assets[i].name.endsWith("msi")){
+                  $(".binjr-download-msi").attr("href", release.assets[i].browser_download_url);
+                }   
+                if (release.assets[i].name.endsWith("rpm")){
+                  $(".binjr-download-rpm").attr("href", release.assets[i].browser_download_url);
+                }   
+                if (release.assets[i].name.endsWith("deb")){
+                  $(".binjr-download-deb").attr("href", release.assets[i].browser_download_url);
+                }   
+                if (release.assets[i].name.endsWith("dmg")){
+                  $(".binjr-download-dmg").attr("href", release.assets[i].browser_download_url);
+                }         
+              }                                
+          });
+      }
+    </script>
     <title>{{ site.title | default: site.github.repository_name }}</title>
   </head>
   
-  <link rel="stylesheet" href="{{ site.url }}/assets/css/photo.css"> 
-  <script src="{{ site.url }}/js/photo.js"></script> 
-  <script src="https://use.fontawesome.com/4f6fcc58d8.js"></script>	
-  <script src="{{ site.url }}/js/jquery.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-        GetLatestReleaseInfo();
-    });
-  
-    function GetLatestReleaseInfo() {
-        $.getJSON("{{ site.github.api_url }}/repos/{{ site.github.repository_nwo }}/releases/latest").done(function (release) {
-            for (var i = 0; i < release.assets.length; i++) {
-              if (release.assets[i].name.endsWith("jar")){
-                $(".binjr-download-jar").attr("href", release.assets[i].browser_download_url);
-              }      
-              if (release.assets[i].name.endsWith("msi")){
-                $(".binjr-download-msi").attr("href", release.assets[i].browser_download_url);
-              }   
-              if (release.assets[i].name.endsWith("rpm")){
-                $(".binjr-download-rpm").attr("href", release.assets[i].browser_download_url);
-              }   
-              if (release.assets[i].name.endsWith("deb")){
-                $(".binjr-download-deb").attr("href", release.assets[i].browser_download_url);
-              }   
-              if (release.assets[i].name.endsWith("dmg")){
-                $(".binjr-download-dmg").attr("href", release.assets[i].browser_download_url);
-              }         
-            }                       
-           
-        });
-    }
-  </script>
-
   <body>
    <div id="page_wrap">
     <!-- HEADER -->
