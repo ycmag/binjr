@@ -12,8 +12,8 @@
     <title>{{ site.title | default: site.github.repository_name }}</title>
   </head>
   
-  <link rel="stylesheet" href="binjr_files/photo.css"> 
-  <script src="binjr_files/photo.js"></script> 
+  <link rel="stylesheet" href="{{ site.url }}/js/photo.css"> 
+  <script src="{{ site.url }}/js/photo.js"></script> 
   <script src="https://use.fontawesome.com/4f6fcc58d8.js"></script>	
   <script src="{{ site.url }}/js/jquery.min.js"></script>
   <script type="text/javascript">
@@ -83,8 +83,10 @@
       </footer>
     </div>
    </div>
-   <!-- Include this on pages you want the gallery to appear -->
-    <div id="PhotoViewer" class="photo-viewer">
+
+  </body>
+     <!-- Include this on pages you want the gallery to appear -->
+     <div id="PhotoViewer" class="photo-viewer">
       <header class="photo-viewer--title">
         <h1 id="PhotoViewerTitle">Image Title</h1>
         <div id="PhotoViewerClose" class="photo-viewer--close"><a href="#">X</a></div>
@@ -100,5 +102,4 @@
           <div id="PhotoViewerNextImage" class="photo-viewer--next-image"><a href="#">Next &raquo;</a></div>
         </div>
     </div>
-  </body>
 </html>
