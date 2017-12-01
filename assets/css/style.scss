@@ -816,6 +816,7 @@ form {
 
 #page_wrap {
     position: relative;
+    background: $binjr-color;
     max-width: $page_width;
     box-shadow: 0 0 10px black;
     border: 1px solid $binjr-color;
@@ -866,8 +867,15 @@ a:focus {
  display:flex;
  flex-direction:row;
  flex-wrap:wrap;
-
 }
+
+.tool-bar--label {
+ font-size:18px;
+ margin: auto;
+ text-shadow: #111 0px 0px 10px;
+ color:#92CDDC;
+}
+
 .tool-bar--item {
  background:#204656;
  background:-moz-linear-gradient(top, #2C687F, #204656);
