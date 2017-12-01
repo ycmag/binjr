@@ -52,7 +52,7 @@ The latest release can be found [here](https://github.com/fthevenet/binjr/releas
   
   The source code repository for *binjr* is hosted on [Github](https://www.github.com) and can be found [here]({{ site.github.repository_url }}).
   
-  Clone the [git repo]({{ site.github.clone_url }}) or download a [zip]({{ site.github.zip_url }}) or [tar.gz]({{{ site.github.tar_url }}}) archive that contains the source code, and build it with Maven 3 and a 1.8 Java Development Kit.
+  Clone the [git repo]({{ site.github.clone_url }}) or download a [zip]({{ site.github.zip_url }}) or [tar.gz]({{ site.github.tar_url }}) archive that contains the source code, and build it with Maven 3 and a 1.8 Java Development Kit.
 
 ## Getting help
 
