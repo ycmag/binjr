@@ -62,7 +62,7 @@ If you encounter any problem starting the application, please check the [trouble
 
 If all else failes, or if you would like to suggest an enhancement or a new feature, please open a ticket [here](https://github.com/fthevenet/binjr/issues).
 
-Finally, if you've got some burning questions on the how or why behind *binjr* <font size="2">(and can bear with a bit of silliness...)</font>, try your luck with the [FAQ](MTMUFAQ). 
+Finally, if you've got some burning questions on the how or why behind *binjr*, try your luck with the [FAQ](MTMUFAQ). 
 
 ## How is it licensed?
 
