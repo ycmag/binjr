@@ -863,10 +863,42 @@ a:focus {
     text-decoration: none;
 }
 
+
 .tool-bar {
- display:flex;
- flex-direction:row;
- flex-wrap:wrap;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+}
+
+
+.tool-bar--item {
+    flex-grow: 1; 
+    background: #204656;
+    background: -moz-linear-gradient(top, #2C687F, #204656);
+    background: -webkit-linear-gradient(top, #2C687F, #204656);
+    background: -ms-linear-gradient(top, #2C687F, #204656);
+    background: -o-linear-gradient(top, #2C687F, #204656);
+    background: linear-gradient(top, #2C687F, #204656);
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    *max-width: 120px;
+    min-width: 90px;
+    font-size: 14px;
+    margin: 7px 5px auto;
+    text-align: center;
+    padding: 6px;
+    color: #fff
 }
 
 .tool-bar--label {
@@ -874,26 +906,6 @@ a:focus {
  margin: auto;
  text-shadow: #111 0px 0px 10px;
  color:#92CDDC;
-}
-
-.tool-bar--item {
- background:#204656;
- background:-moz-linear-gradient(top, #2C687F, #204656);
- background:-webkit-linear-gradient(top, #2C687F, #204656);
- background:-ms-linear-gradient(top, #2C687F, #204656);
- background:-o-linear-gradient(top, #2C687F, #204656);
- background:linear-gradient(top, #2C687F, #204656);
- border-radius:4px;
- box-shadow:0 0 5px rgba(0,0,0,0.5);
- font-family:'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
- max-width:200px;
- min-width:120px;
- font-size:14px;
- margin: 7px auto;
- text-align: center;
- padding:6px;
- *font-weight:700;
- color:white
 }
 
 .tool-bar--item:hover {
