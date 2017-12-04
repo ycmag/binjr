@@ -1,4 +1,5 @@
 theme: jekyll-theme-slate
+description: Flexible time-series visualization
 show_downloads: false
 markdown: kramdown
 kramdown:
