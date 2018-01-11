@@ -21,7 +21,7 @@ It is, sadly, Yet Another Oh-So-Clever Recursive Acronym (YAOSCRA??), and it sta
 	
 ***
 
-_**Well in that case you should have called it "ginjr"; it's even more worthy of nerdy street creds, isn't?**_
+_**Well in that case you should have called it "ginjr"; it's even more worthy of nerdy street cred, isn't it?**_
 
 Yay, I know, you're right. But I realized that too late and couldn't be bothered refactoring everything at that stage. Plus I'd already bought the domain name, and I'm far too cheap to buy another one.
 	
