@@ -14,7 +14,7 @@ It is a Java based client application, packaged as a single executable JAR file 
   </figure>
   <figure class="photo-gallery--image">
     <a href="/assets/images/screenshot05.png" class="photo">
-      <img  src="/assets/images/screenshot02.png" alt="binjr screenshot  02">
+      <img  src="/assets/images/screenshot05.png" alt="binjr screenshot  02">
     </a>
   </figure> 
   <figure class="photo-gallery--image">
