@@ -13,7 +13,7 @@ It is a Java based client application, packaged as a single executable JAR file 
     </a>
   </figure>
   <figure class="photo-gallery--image">
-    <a href="/assets/images/screenshot02.png" class="photo">
+    <a href="/assets/images/screenshot05.png" class="photo">
       <img  src="/assets/images/screenshot02.png" alt="binjr screenshot  02">
     </a>
   </figure> 
